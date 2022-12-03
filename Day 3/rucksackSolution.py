@@ -14,7 +14,7 @@ for line in dt_file:
 
 sum(priority)
 
-all_letters = []
+
 three_group_priority = []
 with open('C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 3/d3_data.txt', 'r') as f:
     while True:
@@ -23,7 +23,6 @@ with open('C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 3/d3_data.txt', 'r'
             break
         common_priority = ''.join(set(next_n_lines[0]).intersection(next_n_lines[1], next_n_lines[2]))
         common_priority = common_priority.strip('\n')
-        #all_letters.append(common_priority)
         if common_priority.islower():
             three_priority_num = ord(common_priority) - 96
         elif common_priority.isupper():
