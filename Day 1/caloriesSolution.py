@@ -1,6 +1,6 @@
 import pandas as pd
 
-dt_file = open('C:/Users/aclark5/PycharmProjects/AdventOfCode/2022/Day 1/d1_data.txt', 'r')  # Set data file
+dt_file = open('C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 1/d1_data.txt', 'r')  # Set data file
 elf_num = 1  # set elf number
 elf_calories = []  # blank list to add calories to
 all_elf_cals = pd.DataFrame({'Elf': pd.Series(dtype='str'),  # blank df to compile all elf totals
