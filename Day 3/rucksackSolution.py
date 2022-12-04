@@ -3,6 +3,8 @@ from itertools import islice
 dt_file = open('C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 3/d3_data.txt', 'r')  # Set data file
 priority = []
 
+#Part 1
+
 for line in dt_file:
     firsthalf, secondhalf = line[:len(line) // 2], line[len(line) // 2:]
     priority_letter = ''.join(set(firsthalf).intersection(secondhalf))
@@ -14,6 +16,7 @@ for line in dt_file:
 
 sum(priority)
 
+#Part 2
 
 three_group_priority = []
 with open('C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 3/d3_data.txt', 'r') as f:
