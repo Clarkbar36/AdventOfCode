@@ -1,4 +1,4 @@
-with open("C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 7/d7_data.txt", "r") as f:
+with open("C:/Users/aclark5/PycharmProjects/AdventOfCode/Day 7/cody_test.txt", "r") as f:
     dt_file = f.read()
 
 folder_sizes = {}
@@ -26,6 +26,9 @@ for line in lines:
 
 # Part 1
 print(sum(value for name, value in folder_sizes.items() if value < 100000))
+
+
+t = {key: folder_sizes[key] for key in folder_sizes if folder_sizes[key] < 100_000}
 
 # Part 2
 needed_space = 30000000 - (70000000 - folder_sizes.get("/"))
