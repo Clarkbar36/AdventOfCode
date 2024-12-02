@@ -4,3 +4,5 @@
 /venv/.gitignore
 /venv/pyvenv.cfg
 .idea
+*.txt
+*.csv
