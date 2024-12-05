@@ -21,7 +21,7 @@ with open("input", "r") as file:
 
     mul_pattern = r'mul\((\d+),\s*(\d+)\)'
     enabled_pattern = re.compile(f"{re.escape(disabled_string)}.*?{re.escape(enabled_string)}", re.DOTALL)
-    
+
     cleaned_content = re.sub(enabled_pattern, f"{disabled_string}{enabled_string}", contents)
     p2_matches = re.findall(mul_pattern, cleaned_content)
 
